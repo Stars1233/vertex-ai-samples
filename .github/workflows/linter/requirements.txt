@@ -2,9 +2,9 @@ git+https://github.com/tensorflow/docs
 ipython
 jupyter
 nbconvert
-black==24.4.2
-pyupgrade==3.16.0
+black==24.10.0
+pyupgrade==3.18.0
 isort==5.13.2
-flake8==7.1.0
-nbqa==1.8.5
+flake8==7.1.1
+nbqa==1.9.0
 

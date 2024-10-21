@@ -1203,13 +1203,13 @@ def add_index(path: str,
         print('        </td>')
         print('        <td>')
         if colab_link:
-            print(f'            <a href="{colab_link}" target="_blank" class="external" track-type="notebookTutorial" track-name="colabLink">Colab</a><br/>\n')
+            print(f'            <a href="{colab_link}" target="_blank" track-type="notebookTutorial" track-name="colabLink">Colab</a><br/>\n')
         if colab_enterprise_link:
-            print(f'            <a href="{colab_enterprise_link}" target="_blank" class="external" track-type="notebookTutorial" track-name="colabEnterpriseLink">Colab Enterprise</a><br/>\n')
+            print(f'            <a href="{colab_enterprise_link}" target="_blank" track-type="notebookTutorial" track-name="colabEnterpriseLink">Colab Enterprise</a><br/>\n')
         if git_link:
-            print(f'            <a href="{git_link}" target="_blank" class="external" track-type="notebookTutorial" track-name="gitHubLink">GitHub</a><br/>\n')
+            print(f'            <a href="{git_link}" target="_blank" track-type="notebookTutorial" track-name="gitHubLink">GitHub</a><br/>\n')
         if workbench_link:
-            print(f'            <a href="{workbench_link}" target="_blank" class="external" track-type="notebookTutorial" track-name="workbenchLink">Vertex AI Workbench</a><br/>\n')
+            print(f'            <a href="{workbench_link}" target="_blank" track-type="notebookTutorial" track-name="workbenchLink">Vertex AI Workbench</a><br/>\n')
         print('        </td>')
         print('    </tr>\n')
     elif args.repo:
@@ -1305,9 +1305,9 @@ def replace_cl(text : str ) -> str:
         'Vertex AI Workbench': '{{vertex_workbench_name}}',
         #'Vertex SDK': '{{vertex_sdk_name}}',
         #'Vertex AI SDK': '{{vertex_sdk_name}}',
-        'Vertex AI': '{{vertex_ai_name}}',
-        'Vertex AI batch prediction': '{{vertex_ai_name}} {{batch_prediction_name}}',
         'Vertex AI SDK for Python': '{{vertex_sdk_python}}',
+        'Vertex AI batch prediction': '{{vertex_ai_name}} {{batch_prediction_name}}',
+        'Vertex AI': '{{vertex_ai_name}}',
         'Ray on Vertex AI': '{{ray_vertex_ai_name}}',
         'Google Cloud console': '{{console_name}}',
         
